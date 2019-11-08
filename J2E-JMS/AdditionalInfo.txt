@@ -1,0 +1,18 @@
+#Additional Info:
+#(1) Create Maven project - with architype webapp - for J2ee project
+#(2) Add j2ee dependency
+#(3) Start the serve and create the queue name
+
+#(4) Create EJB Stateless session class, and inject context, map queue resource name, create producer
+#(5) Create Servlet class and define doGet method to send message from browser (urlPattern "/")
+
+#(6) Create the Message Driven Bean (to consume the message) which implements the MessageListener.
+#(7) Add the MDB configuration: add destination - Queue name, destinationType-Queue, acknowledge type.
+#
+#(8) Update pom for properties (update compiler level to java 1.8), build plugin for war file
+
+
+#(***) Run the application, run Maven Clean, Maven Install
+# Now copy the created war file from the target/ and copy to standalone -> deployment folder.
+
+
